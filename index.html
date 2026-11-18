@@ -2,16 +2,22 @@
 <html lang="sq">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Faqja zyrtare e Fshatit Turi — histori, tradita, statistika, galeria e fotografive dhe vendndodhja.">
+    <meta name="theme-color" content="#0b1f14">
     <title>Fshati Turi - Faqja Zyrtare</title>
+
     <link rel="shortcut icon" href="assets/img/logo/logo.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
         <div class="container">
@@ -28,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        <a class="nav-link active" href="index.html" aria-current="page"><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> Rreth Nesh</a>
@@ -58,11 +64,30 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home">
-        <h1>Fshati Turi</h1>
-        <p>Mirësevini në faqen tonë zyrtare</p>
-        <p>"Fshati Turi, një vend ku natyra flet me qetësi, tradita jeton në zemrat e banorëve dhe mikpritja është pasuria më e madhe."</p>
-        <a href="fotografit.html" class="btn-hero">Shiko Fotot <i class="fas fa-arrow-right ms-2"></i></a>
+    <section id="home" class="hero">
+        <div class="hero-inner">
+            <span class="hero-eyebrow reveal">Faqja Zyrtare</span>
+            <h1 class="hero-title reveal">Fshati Turi</h1>
+            <p class="hero-subtitle reveal">
+                Mirësevini në faqen tonë zyrtare — një vend ku natyra flet me qetësi,
+                tradita jeton në zemrat e banorëve dhe mikpritja është pasuria më e madhe.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="fotografit.html" class="btn-hero btn-hero-primary">
+                    <i class="fas fa-camera" aria-hidden="true"></i> Shiko Fotot
+                </a>
+                <a href="#about" class="btn-hero btn-hero-ghost">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i> Rreth Nesh
+                </a>
+            </div>
+            <div class="hero-meta reveal">
+                <span><i class="fas fa-users" aria-hidden="true"></i> <strong>~500</strong> banorë</span>
+                <span class="hero-dot" aria-hidden="true"></span>
+                <span><i class="fas fa-mountain" aria-hidden="true"></i> Peizazh malor</span>
+                <span class="hero-dot" aria-hidden="true"></span>
+                <span><i class="fas fa-landmark" aria-hidden="true"></i> Shek. XVIII</span>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -76,33 +101,39 @@
 
             <div class="about-grid">
                 <div class="about-card reveal">
-                    <div class="about-card-icon"><i class="fas fa-landmark"></i></div>
+                    <div class="about-card-icon"><i class="fas fa-landmark" aria-hidden="true"></i></div>
                     <h3>Historiku</h3>
                     <p>Fshati Turi ka një histori të lashtë, e cila lidhet me traditat dhe kulturën e zonës. Sipas tregimeve të banorëve dhe burimeve të trashëguara brez pas brezi, fshati është themeluar shekuj më parë dhe ka luajtur një rol të rëndësishëm në zhvillimin e komunitetit lokal. Gjatë historisë, Turi ka qenë një vendbanim i qëndrueshëm, ku banorët janë marrë kryesisht me bujqësi dhe blegtori.</p>
                 </div>
 
                 <div class="about-card reveal">
-                    <div class="about-card-icon"><i class="fas fa-users"></i></div>
+                    <div class="about-card-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
                     <h3>Popullsia</h3>
                     <p>Fshati Turi është një vendbanim i vogël, i njohur për komunitetin e tij të ngushtë dhe mikpritës. Banorët janë kryesisht të angazhuar në bujqësi dhe blegtori, duke ruajtur traditat e trashëguara brez pas brezi. Popullsia aktuale është rreth 500 banorë, shumica prej të cilëve janë familje me rrënjë të thella në fshat.</p>
                 </div>
 
                 <div class="about-card reveal">
-                    <div class="about-card-icon"><i class="fas fa-building-columns"></i></div>
+                    <div class="about-card-icon"><i class="fas fa-building-columns" aria-hidden="true"></i></div>
                     <h3>Administrata</h3>
                     <p>Fshati Turi bën pjesë në komunën përkatëse dhe ka një administratë lokale që kujdeset për nevojat e banorëve, duke përfshirë mirëmbajtjen e infrastrukturës dhe organizimin e çështjeve të përbashkëta të fshatit. Administrata është e organizuar në mënyrë që të sigurojë shërbime cilësore për të gjithë banorët.</p>
                 </div>
 
                 <div class="about-card reveal">
-                    <div class="about-card-icon"><i class="fas fa-seedling"></i></div>
+                    <div class="about-card-icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
                     <h3>Ekonomia</h3>
                     <p>Ekonomia e fshatit mbështetet kryesisht në bujqësi dhe blegtori, me banorët që kultivojnë produkte të ndryshme bujqësore dhe rrisin bagëti për tregun lokal. Disa familje gjithashtu merren me zanate tradicionale dhe emigracioni ka ndikuar në përmirësimin e kushteve ekonomike të fshatit në vitet e fundit.</p>
                 </div>
 
                 <div class="about-card reveal">
-                    <div class="about-card-icon"><i class="fas fa-heart"></i></div>
+                    <div class="about-card-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
                     <h3>Tradita</h3>
                     <p>Fshati Turi është i pasur me tradita dhe zakone që ruhen me krenari. Dasmat, festat fetare dhe gëzimet familjare shoqërohen me këngë dhe valle tradicionale. Mikpritja është një vlerë e shenjtë për banorët, duke e bërë fshatin një vend të ngrohtë dhe të veçantë për të gjithë vizitorët.</p>
+                </div>
+
+                <div class="about-card reveal">
+                    <div class="about-card-icon"><i class="fas fa-mountain-sun" aria-hidden="true"></i></div>
+                    <h3>Natyra</h3>
+                    <p>I rrethuar nga kodra të gjelbërta, pyje dhe ajër i pastër, Turi ofron qetësi dhe bukuri natyrore gjatë gjithë vitit. Është vendi ideal për ata që kërkojnë një përvojë autentike larg zhurmës së qytetit.</p>
                 </div>
             </div>
         </div>
@@ -111,52 +142,50 @@
     <!-- Statistics Section -->
     <section class="stats-section" id="stats">
         <div class="container stats-container">
-            <div class="reveal">
+            <div class="section-header reveal">
                 <span class="section-label">Statistika</span>
                 <h2>FSHATI TURI NË SHIFRA</h2>
                 <p class="section-subtitle">Të dhëna dhe informacione rreth komunitetit tonë</p>
             </div>
 
-            <!-- Stats Grid -->
             <div class="stats-grid">
                 <div class="stat-card reveal">
-                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
                     <div class="stat-label">Popullsia</div>
                     <div class="stat-number" data-target="500">0</div>
                     <div class="stat-suffix">Banorë</div>
                 </div>
 
                 <div class="stat-card reveal">
-                    <div class="stat-icon"><i class="fas fa-home"></i></div>
+                    <div class="stat-icon"><i class="fas fa-home" aria-hidden="true"></i></div>
                     <div class="stat-label">Familje</div>
                     <div class="stat-number" data-target="120">0</div>
                     <div class="stat-suffix">Familje</div>
                 </div>
 
                 <div class="stat-card reveal">
-                    <div class="stat-icon"><i class="fas fa-plane-departure"></i></div>
+                    <div class="stat-icon"><i class="fas fa-plane-departure" aria-hidden="true"></i></div>
                     <div class="stat-label">Migrimet</div>
                     <div class="stat-number" data-target="150">0</div>
                     <div class="stat-suffix">Jashtë Shtetit</div>
                 </div>
 
                 <div class="stat-card reveal">
-                    <div class="stat-icon"><i class="fas fa-globe-europe"></i></div>
+                    <div class="stat-icon"><i class="fas fa-globe-europe" aria-hidden="true"></i></div>
                     <div class="stat-label">Diaspora</div>
                     <div class="stat-number" data-target="15">0</div>
                     <div class="stat-suffix">Vende</div>
                 </div>
 
                 <div class="stat-card reveal">
-                    <div class="stat-icon"><i class="fas fa-mountain"></i></div>
+                    <div class="stat-icon"><i class="fas fa-mountain" aria-hidden="true"></i></div>
                     <div class="stat-label">Sipërfaqja</div>
                     <div class="stat-number" data-target="25">0</div>
                     <div class="stat-suffix">km²</div>
                 </div>
 
-                <!-- Themelimi: trajtohet si tekst, jo numërator -->
                 <div class="stat-card reveal">
-                    <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="stat-icon"><i class="fas fa-calendar-alt" aria-hidden="true"></i></div>
                     <div class="stat-label">Themelimi</div>
                     <div class="stat-number stat-number-text">Shek. XVIII</div>
                     <div class="stat-suffix">Vit i lashtë</div>
@@ -189,11 +218,11 @@
             <div class="map-wrapper reveal">
                 <div class="map-header">
                     <div class="map-header-info">
-                        <h3><i class="fas fa-map-marker-alt"></i> Fshati Turi</h3>
+                        <h3><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Fshati Turi</h3>
                         <p>Klikoni butonin për të hapur hartën në Google Maps</p>
                     </div>
                     <a href="https://maps.app.goo.gl/LWkzjWryoFSG8Y6v8" target="_blank" rel="noopener noreferrer" class="btn-map">
-                        <i class="fas fa-external-link-alt"></i> Hap në Google Maps
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i> Hap në Google Maps
                     </a>
                 </div>
                 <div class="map-frame">
@@ -205,11 +234,10 @@
                         referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
 
-                <!-- Përshkrimi i Hartës -->
                 <div class="map-description">
                     <div class="map-description-grid">
                         <div class="map-desc-item">
-                            <div class="map-desc-icon"><i class="fas fa-location-dot"></i></div>
+                            <div class="map-desc-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
                             <div class="map-desc-text">
                                 <h5>Vendndodhja</h5>
                                 <p>Fshati Turi ndodhet në një zonë malore, i rrethuar nga natyra e paprekur.</p>
@@ -217,7 +245,7 @@
                         </div>
 
                         <div class="map-desc-item">
-                            <div class="map-desc-icon"><i class="fas fa-route"></i></div>
+                            <div class="map-desc-icon"><i class="fas fa-route" aria-hidden="true"></i></div>
                             <div class="map-desc-text">
                                 <h5>Rruga</h5>
                                 <p>Mund të arrihet përmes rrugëve kryesore të rajonit, lehtësisht të aksesueshme.</p>
@@ -225,7 +253,7 @@
                         </div>
 
                         <div class="map-desc-item">
-                            <div class="map-desc-icon"><i class="fas fa-mountain-sun"></i></div>
+                            <div class="map-desc-icon"><i class="fas fa-mountain-sun" aria-hidden="true"></i></div>
                             <div class="map-desc-text">
                                 <h5>Peizazhi</h5>
                                 <p>Fshati karakterizohet nga kodra të gjelbërta, pyje dhe ajër i pastër.</p>
@@ -233,7 +261,7 @@
                         </div>
 
                         <div class="map-desc-item">
-                            <div class="map-desc-icon"><i class="fas fa-location-arrow"></i></div>
+                            <div class="map-desc-icon"><i class="fas fa-location-arrow" aria-hidden="true"></i></div>
                             <div class="map-desc-text">
                                 <h5>Koordinatat</h5>
                                 <p>42.4583° N, 21.7205° E — në zemër të rajonit historik.</p>
@@ -255,50 +283,56 @@
             </div>
 
             <div class="gallery-grid">
-                <div class="gallery-card reveal" role="button" tabindex="0"
+                <article class="gallery-card reveal" role="button" tabindex="0"
                      data-bs-toggle="modal" data-bs-target="#photoModal"
                      data-title="Pamje e Përgjithshme e Fshatit Turi"
                      data-description="Një pamje panoramike e fshatit Turi, ku shtëpitë dhe natyra përreth ndërthuren në harmoni. Ky këndvështrim kap thelbin e jetës fshatare dhe bukurinë e peizazhit.">
                     <div class="gallery-card-image">
-                        <img src="assets/img/fotot card/turija.jpg" alt="Pamje e Përgjithshme e Fshatit Turi">
-                        <div class="gallery-card-overlay"><i class="fas fa-expand"></i></div>
+                        <img src="assets/img/fotot%20card/turija.jpg" alt="Pamje e Përgjithshme e Fshatit Turi" loading="lazy" decoding="async">
+                        <div class="gallery-card-overlay"><i class="fas fa-expand" aria-hidden="true"></i></div>
                     </div>
                     <div class="gallery-card-body">
                         <span class="gallery-card-tag">Peizazh</span>
                         <h4>Pamje e Përgjithshme</h4>
                         <p>Fshati Turi dhe natyra përreth</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="gallery-card reveal" role="button" tabindex="0"
+                <article class="gallery-card reveal" role="button" tabindex="0"
                      data-bs-toggle="modal" data-bs-target="#photoModal"
                      data-title="Shkolla e Fshatit Turi"
                      data-description="Shkolla e fshatit Turi, një institucion i rëndësishëm arsimor që ka edukuar breza të tërë banorësh. Një simbol i dijes dhe zhvillimit të komunitetit.">
                     <div class="gallery-card-image">
-                        <img src="assets/img/fotot card/DSC_0073.jpg" alt="Shkolla e Fshatit Turi">
-                        <div class="gallery-card-overlay"><i class="fas fa-expand"></i></div>
+                        <img src="assets/img/fotot%20card/DSC_0073.jpg" alt="Shkolla e Fshatit Turi" loading="lazy" decoding="async">
+                        <div class="gallery-card-overlay"><i class="fas fa-expand" aria-hidden="true"></i></div>
                     </div>
                     <div class="gallery-card-body">
                         <span class="gallery-card-tag">Arsim</span>
                         <h4>Shkolla e Fshatit Turi</h4>
                         <p>Institucioni arsimor që edukon brezat e rinj të fshatit</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="gallery-card reveal" role="button" tabindex="0"
+                <article class="gallery-card reveal" role="button" tabindex="0"
                      data-bs-toggle="modal" data-bs-target="#photoModal"
                      data-title="Xhamia e Fshatit Turi"
                      data-description="Xhamia e fshatit Turi, një objekt fetar dhe kulturor që qëndron krenar në zemër të komunitetit. Një vend i rëndësishëm për banorët dhe simbol i traditës fetare të fshatit.">
                     <div class="gallery-card-image">
-                        <img src="assets/img/fotot card/DSC_0070.jpg" alt="Xhamia e Fshatit Turi">
-                        <div class="gallery-card-overlay"><i class="fas fa-expand"></i></div>
+                        <img src="assets/img/fotot%20card/DSC_0070.jpg" alt="Xhamia e Fshatit Turi" loading="lazy" decoding="async">
+                        <div class="gallery-card-overlay"><i class="fas fa-expand" aria-hidden="true"></i></div>
                     </div>
                     <div class="gallery-card-body">
                         <span class="gallery-card-tag">Kulturë</span>
                         <h4>Xhamia e Fshatit Turi</h4>
                         <p>Objekti fetar dhe kulturor që qëndron krenar në zemër të komunitetit.</p>
                     </div>
-                </div>
+                </article>
+            </div>
+
+            <div class="gallery-cta reveal">
+                <a href="fotografit.html" class="btn-hero btn-hero-primary">
+                    <i class="fas fa-images" aria-hidden="true"></i> Shiko galerinë e plotë
+                </a>
             </div>
         </div>
     </section>
@@ -328,17 +362,17 @@
             </div>
 
             <div class="social-links">
-                <a href="https://www.facebook.com/fondacionituri" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://youtu.be/gt-Pqfk96WQ?si=R-N_cxXkvDdUCLoo" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/fondacionituri" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="https://youtu.be/gt-Pqfk96WQ?si=R-N_cxXkvDdUCLoo" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
             </div>
 
             <div class="footer-extra">
-                <a href="index.html"><i class="fas fa-home"></i> Kthehu në Home</a>
-                <a href="#about"><i class="fas fa-info-circle"></i> Rreth Nesh</a>
-                <a href="#stats"><i class="fas fa-chart-bar"></i> Statistika</a>
-                <a href="punimet.html"><i class="fas fa-hammer"></i> Punimet në Fshat</a>
-                <a href="fotografit.html"><i class="fas fa-images"></i> Fotografitë</a>
-                <a href="#map"><i class="fas fa-map-marked-alt"></i> Harta</a>
+                <a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Kthehu në Home</a>
+                <a href="#about"><i class="fas fa-info-circle" aria-hidden="true"></i> Rreth Nesh</a>
+                <a href="#stats"><i class="fas fa-chart-bar" aria-hidden="true"></i> Statistika</a>
+                <a href="punimet.html"><i class="fas fa-hammer" aria-hidden="true"></i> Punimet në Fshat</a>
+                <a href="fotografit.html"><i class="fas fa-images" aria-hidden="true"></i> Fotografitë</a>
+                <a href="#map"><i class="fas fa-map-marked-alt" aria-hidden="true"></i> Harta</a>
             </div>
 
             <div class="footer-copyright">
@@ -351,7 +385,7 @@
 
     <!-- Back to Top -->
     <button type="button" class="back-to-top" id="backToTop" aria-label="Kthehu lart">
-        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
